@@ -6,25 +6,21 @@ module.exports = {
         REACT_APP_ENV: true,
     },
     rules: {
-        // "no-console": process.env.NODE_ENV === "production" ? "warn" : "off",
-        "no-console": "warn",
-        "no-debugger": "error",
-        // "no-debugger": process.env.NODE_ENV === "production" ? "error" : "off",
-        "no-alert": 2,
-
-        // "no-unused-vars": "warn",
-        // "no-tabs": "error",
-        // "indent": ["error", 4],
-        // "comma-dangle": [
-        //     "warn",
-        //     {
-        //         arrays: "always-multiline",
-        //         objects: "always-multiline",
-        //         imports: "never",
-        //         exports: "never",
-        //         functions: "ignore",
-        //     },
-        // ],
-        // "no-var": "warn",
+        "no-console": process.env.NODE_ENV === "production" ? "warn" : "off",
+        "no-debugger": process.env.NODE_ENV === "production" ? "error" : "off",
+        "no-unused-vars": "warn",
+        "no-tabs": "error",
+        "indent": ["error", 4],
+        "comma-dangle": [
+            "warn",
+            {
+                arrays: "always-multiline",
+                objects: "always-multiline",
+                imports: "never",
+                exports: "never",
+                functions: "ignore",
+            },
+        ],
+        "no-var": "warn",
     },
 };

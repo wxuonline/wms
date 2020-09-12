@@ -3,8 +3,6 @@ import { PageContainer } from '@ant-design/pro-layout';
 import { Card, Alert, Typography } from 'antd';
 import styles from './Welcome.less';
 
-alert(1)
-
 const CodePreview = ({children}) => (
     <pre className={ styles.pre }>
         <code>
